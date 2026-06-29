@@ -1,0 +1,10 @@
+# Netlify _redirects
+# Force HTTPS
+http://zagamiservicesrls.it/* https://www.zagamiservicesrls.it/:splat 301!
+http://www.zagamiservicesrls.it/* https://www.zagamiservicesrls.it/:splat 301!
+
+# www redirect
+https://zagamiservicesrls.it/* https://www.zagamiservicesrls.it/:splat 301!
+
+# 404 fallback
+/* /index.html 200
