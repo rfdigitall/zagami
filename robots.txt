@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://www.zagamiservicesrls.it/sitemap.xml
+Sitemap: https://www.soccorsostradalezagami.it/sitemap.xml

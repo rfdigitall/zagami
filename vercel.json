@@ -24,14 +24,20 @@
   "redirects": [
     {
       "source": "/(.*)",
-      "has": [{ "type": "host", "value": "zagamiservicesrls.it" }],
-      "destination": "https://www.zagamiservicesrls.it/$1",
+      "has": [{ "type": "host", "value": "soccorsostradalezagami.it" }],
+      "destination": "https://www.soccorsostradalezagami.it/$1",
       "permanent": true
     },
     {
       "source": "/(.*)",
       "has": [{ "type": "host", "value": "zagamiservicesrls.vercel.app" }],
-      "destination": "https://www.zagamiservicesrls.it/$1",
+      "destination": "https://www.soccorsostradalezagami.it/$1",
+      "permanent": true
+    },
+    {
+      "source": "/(.*)",
+      "has": [{ "type": "host", "value": "soccorsostradalezagami.vercel.app" }],
+      "destination": "https://www.soccorsostradalezagami.it/$1",
       "permanent": true
     }
   ]

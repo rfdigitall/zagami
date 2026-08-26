@@ -32,19 +32,19 @@
     Cache-Control = "public, max-age=31536000, immutable"
 
 [[redirects]]
-  from = "http://zagamiservicesrls.it/*"
-  to = "https://www.zagamiservicesrls.it/:splat"
+  from = "http://soccorsostradalezagami.it/*"
+  to = "https://www.soccorsostradalezagami.it/:splat"
   status = 301
   force = true
 
 [[redirects]]
-  from = "http://www.zagamiservicesrls.it/*"
-  to = "https://www.zagamiservicesrls.it/:splat"
+  from = "http://www.soccorsostradalezagami.it/*"
+  to = "https://www.soccorsostradalezagami.it/:splat"
   status = 301
   force = true
 
 [[redirects]]
-  from = "https://zagamiservicesrls.it/*"
-  to = "https://www.zagamiservicesrls.it/:splat"
+  from = "https://soccorsostradalezagami.it/*"
+  to = "https://www.soccorsostradalezagami.it/:splat"
   status = 301
   force = true

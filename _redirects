@@ -1,7 +1,7 @@
 # Force HTTPS + apex → www
-http://zagamiservicesrls.it/* https://www.zagamiservicesrls.it/:splat 301!
-http://www.zagamiservicesrls.it/* https://www.zagamiservicesrls.it/:splat 301!
-https://zagamiservicesrls.it/* https://www.zagamiservicesrls.it/:splat 301!
+http://soccorsostradalezagami.it/* https://www.soccorsostradalezagami.it/:splat 301!
+http://www.soccorsostradalezagami.it/* https://www.soccorsostradalezagami.it/:splat 301!
+https://soccorsostradalezagami.it/* https://www.soccorsostradalezagami.it/:splat 301!
 
 # Real 404 page (do not SPA-rewrite all routes onto index)
 /* /404.html 404
