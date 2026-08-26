@@ -753,7 +753,9 @@ header{position:sticky;top:0;z-index:60;background:rgba(9,11,14,.72);backdrop-fi
   background:var(--nero-3);
   cursor:pointer;
 }
-.gal-item img{
+.gal-item img,
+.gal-item picture,
+.gal-item picture img{
   width:100%;
   height:100%;
   object-fit:cover;
@@ -761,6 +763,7 @@ header{position:sticky;top:0;z-index:60;background:rgba(9,11,14,.72);backdrop-fi
   display:block;
   transition:transform .5s ease;
 }
+.gal-item picture{display:contents}
 .gal-item:hover img{transform:scale(1.05)}
 
 /* LOGO ITEM */
@@ -1410,7 +1413,10 @@ window.ZAGAMI_MAP_SRC='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d301
         <div class="gal-cap"><span>Flotta operativa in strada</span></div>
       </div>
       <div class="gal-item" onclick="openLb(4)">
-        <img src="g04.webp" alt="Zagami recupero Audi RS bianca — carroattrezzi Maddaloni Caserta" loading="lazy">
+        <picture>
+          <source srcset="g04.webp" type="image/webp">
+          <img src="g04.jpg" alt="Zagami recupero Audi RS bianca — carroattrezzi Maddaloni Caserta" loading="lazy" width="945" height="700">
+        </picture>
         <div class="gal-cap"><span>Recupero Audi RS</span></div>
       </div>
       <div class="gal-item" onclick="openLb(5)">
@@ -1426,7 +1432,10 @@ window.ZAGAMI_MAP_SRC='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d301
         <div class="gal-cap"><span>Recupero supercar</span></div>
       </div>
       <div class="gal-item" onclick="openLb(8)">
-        <img src="g01.webp" alt="Zagami Service recupero Range Rover — carroattrezzi SS 265 Maddaloni" loading="lazy">
+        <picture>
+          <source srcset="g01.webp" type="image/webp">
+          <img src="g01.jpg" alt="Zagami Service recupero Range Rover — carroattrezzi SS 265 Maddaloni" loading="lazy" width="945" height="703">
+        </picture>
         <div class="gal-cap"><span>Recupero Range Rover</span></div>
       </div>
       <div class="gal-item" onclick="openLb(9)">
@@ -1442,7 +1451,10 @@ window.ZAGAMI_MAP_SRC='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d301
         <div class="gal-cap"><span>Recupero camper</span></div>
       </div>
       <div class="gal-item" onclick="openLb(12)">
-        <img src="g07.webp" alt="Zagami camion grande recupero camper — soccorso veicoli pesanti Maddaloni" loading="lazy">
+        <picture>
+          <source srcset="g07.webp" type="image/webp">
+          <img src="g07.jpg" alt="Zagami camion grande recupero camper — soccorso veicoli pesanti Maddaloni" loading="lazy" width="945" height="697">
+        </picture>
         <div class="gal-cap"><span>Veicoli speciali e camper</span></div>
       </div>
       <div class="gal-item" onclick="openLb(13)">
@@ -1734,15 +1746,15 @@ var LB_SRCS=[
   ['g09.webp','Recupero Lamborghini Huracán'],
   ['g05.webp','Intervento in autostrada'],
   ['g06.webp','Flotta operativa in strada'],
-  ['g04.webp','Recupero Audi RS'],
+  ['g04.jpg','Recupero Audi RS'],
   ['g10.webp','Traino in area urbana'],
   ['g03.webp','Presidio autostradale'],
   ['cc61329dfea34e7d801140a1bdbc5fb3.jpg','Recupero supercar'],
-  ['g01.webp','Recupero Range Rover'],
+  ['g01.jpg','Recupero Range Rover'],
   ['3a4a856587c545ed9bd75eaef7e378f3.jpg','Traino Mercedes G-Class'],
   ['g08.webp','Auto di cortesia + soccorso'],
   ['d91584daebe64a35b34485e0c05e8260.jpg','Recupero camper'],
-  ['g07.webp','Veicoli speciali e camper'],
+  ['g07.jpg','Veicoli speciali e camper'],
   ['7f62c4866baf4a7e8a6b2f70be8e4160.jpg','Recupero veicolo commerciale'],
   ['home.jpg','La nostra flotta'],
   ['svc-furgon.webp','Recupero furgone commerciale']
