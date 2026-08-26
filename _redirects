@@ -1,10 +1,7 @@
-# Netlify _redirects
-# Force HTTPS
+# Force HTTPS + apex → www
 http://zagamiservicesrls.it/* https://www.zagamiservicesrls.it/:splat 301!
 http://www.zagamiservicesrls.it/* https://www.zagamiservicesrls.it/:splat 301!
-
-# www redirect
 https://zagamiservicesrls.it/* https://www.zagamiservicesrls.it/:splat 301!
 
-# 404 fallback
-/* /index.html 200
+# Real 404 page (do not SPA-rewrite all routes onto index)
+/* /404.html 404

@@ -19,6 +19,8 @@
 <link rel="canonical" href="https://www.zagamiservicesrls.it/">
 <meta name="author" content="Zagami Service srls">
 <meta name="reply-to" content="soccorsostradalezagami@gmail.com">
+<meta name="robots" content="index,follow,max-image-preview:large">
+<meta name="googlebot" content="index,follow">
 
 <meta property="og:title" content="Zagami Service — Soccorso Stradale H24 Maddaloni (CE)">
 <meta property="og:description" content="Soccorso stradale H24 a Maddaloni (CE). Carroattrezzi, gommista, noleggio auto. Intervento rapido SS 265/258. Chiama il 331 250 1018.">
@@ -1070,7 +1072,7 @@ window.ZAGAMI_TRACKING={
 <header>
   <div class="wrap">
     <nav class="nav">
-      <a class="logo" href="#" aria-label="Zagami Service srls">
+      <a class="logo" href="/" aria-label="Zagami Service srls">
         <div class="logo-mark">
           <img src="logo-zagami.png" alt="Zagami Service srls logo">
         </div>
@@ -1589,7 +1591,7 @@ window.ZAGAMI_TRACKING={
   <div class="wrap">
     <div class="foot">
       <div class="foot-brand">
-        <a class="logo" href="#">
+        <a class="logo" href="/">
           <div class="logo-mark">
             <img src="logo-zagami.png" alt="Zagami Service srls logo">
           </div>
@@ -1646,7 +1648,7 @@ var LB_SRCS=[
   ['g07.webp','Veicoli speciali e camper'],
   ['7f62c4866baf4a7e8a6b2f70be8e4160.jpg','Recupero veicolo commerciale'],
   ['home.jpg','La nostra flotta'],
-  ['svc-furgon.png','Recupero furgone commerciale']
+  ['svc-furgon.webp','Recupero furgone commerciale']
 ];
 var lbIdx=0;
 function openLb(i){lbIdx=i;document.getElementById('lb-img').src=LB_SRCS[i][0];document.getElementById('lb-count').textContent=(i+1)+' / '+LB_SRCS.length+' — '+LB_SRCS[i][1];document.getElementById('lb').classList.add('open');document.body.style.overflow='hidden'}
@@ -1683,7 +1685,9 @@ function _doHeroLocate(){
     var mapsUrl='https://www.google.com/maps?q='+la+','+lo;
     document.getElementById('heroMapsLink').href=mapsUrl;
     /* Reverse geocoding Nominatim */
-    fetch('https://nominatim.openstreetmap.org/reverse?format=json&lat='+la+'&lon='+lo+'&zoom=18&addressdetails=1&accept-language=it')
+    fetch('https://nominatim.openstreetmap.org/reverse?format=json&lat='+la+'&lon='+lo+'&zoom=18&addressdetails=1&accept-language=it',{
+      headers:{'Accept':'application/json'}
+    })
     .then(function(r){return r.json()})
     .then(function(d){
       var a=d.address||{};
@@ -1731,7 +1735,9 @@ function geoOk(p){
   var mapsUrl='https://www.google.com/maps?q='+la+','+lo;
   document.getElementById('locMaps').href=mapsUrl;
   document.getElementById('locRes').classList.add('show');
-  fetch('https://nominatim.openstreetmap.org/reverse?format=json&lat='+la+'&lon='+lo+'&zoom=18&addressdetails=1&accept-language=it')
+  fetch('https://nominatim.openstreetmap.org/reverse?format=json&lat='+la+'&lon='+lo+'&zoom=18&addressdetails=1&accept-language=it',{
+    headers:{'Accept':'application/json'}
+  })
   .then(function(r){return r.json()})
   .then(function(d){
     var a=d.address||{};
@@ -1818,7 +1824,7 @@ document.querySelectorAll('a[href*="wa.me"]').forEach(function(el){
 <!-- COOKIE BANNER -->
 <div class="ck-banner" id="ckBanner">
   <div class="ck-txt">
-    <strong>🍪 Utilizziamo i Cookie</strong>
+    <strong>Utilizziamo i Cookie</strong>
     Questo sito utilizza cookie tecnici per salvare la tua preferenza e, con il tuo consenso, abilita la misurazione Google per chiamate, WhatsApp, GPS e aperture mappa. Leggi la nostra <a href="privacy.html">Privacy Policy</a> e <a href="cookie.html">Cookie Policy</a>.
   </div>
   <div class="ck-btns">
