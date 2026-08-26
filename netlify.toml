@@ -9,16 +9,42 @@
     X-XSS-Protection = "1; mode=block"
     Referrer-Policy = "strict-origin-when-cross-origin"
     Permissions-Policy = "camera=(), microphone=(), geolocation=(self)"
-    Content-Security-Policy = "default-src 'self'; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://www.google-analytics.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data: https:; frame-src https://www.google.com; connect-src 'self' https://www.google-analytics.com"
+    Content-Security-Policy = "default-src 'self'; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://www.google-analytics.com https://www.googleadservices.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data: https:; frame-src https://www.google.com; connect-src 'self' https://www.google-analytics.com https://region1.google-analytics.com https://www.googletagmanager.com https://www.googleadservices.com https://googleads.g.doubleclick.net https://nominatim.openstreetmap.org"
+
+[[headers]]
+  for = "/*.webp"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "/*.jpg"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "/*.jpeg"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "/*.png"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
 
 [[redirects]]
-  from = "http://zagamiservicesrls.it/*"
-  to = "https://www.zagamiservicesrls.it/:splat"
+  from = "http://soccorsostradalezagami.it/*"
+  to = "https://www.soccorsostradalezagami.it/:splat"
   status = 301
   force = true
 
 [[redirects]]
-  from = "http://www.zagamiservicesrls.it/*"
-  to = "https://www.zagamiservicesrls.it/:splat"
+  from = "http://www.soccorsostradalezagami.it/*"
+  to = "https://www.soccorsostradalezagami.it/:splat"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "https://soccorsostradalezagami.it/*"
+  to = "https://www.soccorsostradalezagami.it/:splat"
   status = 301
   force = true
