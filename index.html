@@ -935,7 +935,10 @@ footer{background:#07090B;border-top:1px solid var(--linea);padding:46px 0 26px}
 .foot-legal{display:flex;gap:18px;flex-wrap:wrap;margin-bottom:12px}
 .foot-legal a{font-family:'Barlow Condensed',sans-serif;font-weight:600;text-transform:uppercase;letter-spacing:.1em;font-size:.72rem;color:var(--grigio);transition:color var(--tr)}
 .foot-legal a:hover{color:var(--giallo)}
-.copy{font-size:.72rem;color:#2E343C}
+.copy{font-size:.72rem;color:#2E343C;text-align:center}
+.foot-credit{text-align:center;margin-top:14px;padding-top:14px;border-top:1px solid var(--linea);font-size:.78rem;color:var(--grigio)}
+.foot-credit a{color:var(--giallo);font-family:'Barlow Condensed',sans-serif;font-weight:700;letter-spacing:.08em;text-transform:uppercase;transition:color var(--tr)}
+.foot-credit a:hover{color:#fff}
 
 /* ── WA FAB ── */
 .wa-fab{position:fixed;bottom:80px;right:16px;z-index:99;width:50px;height:50px;border-radius:50%;background:var(--verde);color:#fff;display:grid;place-items:center;box-shadow:0 6px 20px rgba(37,211,102,.4);animation:ring 2.5s infinite}
@@ -1723,6 +1726,7 @@ window.ZAGAMI_MAP_SRC='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d301
   <a href="#" onclick="localStorage.removeItem('zagami_cookie_consent');document.getElementById('ckBanner').classList.remove('hidden');return false;">Gestisci Cookie</a>
 </div>
 <div class="copy">&copy; 2026 Zagami Service srls &mdash; SS 265/258 Saliscendi, Maddaloni 81025 (CE) &middot; P.IVA: 04815960614 &middot; <a href="https://www.soccorsostradalezagami.it/" style="color:inherit">soccorsostradalezagami.it</a> &middot; Soccorso Stradale H24 Caserta</div>
+    <p class="foot-credit">Sito realizzato da <a href="https://rfdigital.it" target="_blank" rel="noopener noreferrer">RF DIGITAL</a></p>
   </div>
 </footer>
 
